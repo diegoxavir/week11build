@@ -64,15 +64,29 @@ ul li {
     text-transform: uppercase;
 }
 
+ /* works with every li in the progress class and selects all the odd ones */
 .do li:nth-child(odd) {
     background-color: rgba(0, 0, 132, 0.2);
 }
 
 .progress li:nth-child(odd) {
-    /* works with every li in the progress class and selects all the odd ones */
+   
     background-color: rgba(225, 225, 225, 0.2);
 }
 
 .fin li:nth-child(odd) {
     background-color: rgba(255, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+appearance: none;
+width: 32px;
+height: 32px;
+background-color: white;
+border-radius: 8px;
+border: 2px solid blueviolet;
+}
+
+input[type="checkbox"] :checked {
+    appearance:unset;
 }
